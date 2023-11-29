@@ -1,0 +1,26 @@
+<div>{{ username +(5+5)}}</div>
+
+
+<label>username1</label>
+<input type="text" value="username1">
+
+<label>password</label>
+<input type="text" value="password">
+<button type="button" class="btn btn-primary" [disabled]="numbervar===6">Primary</button>
+<br>
+<br>
+<br>
+<br>
+
+<label>phone</label>
+<input #phone placeholder="phone number">
+<button type="button" class="btn btn-success" (click)="callphone(phone.value)">call</button>
+<br>
+<br>
+<br>
+<br>
+<label>address</label>
+<input type="text" [(ngModel)]="address">
+
+<h4> {{address}}</h4>
+<button type="button" class="btn btn-success" (click)="calladdress(address)">registration</button>
