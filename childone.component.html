@@ -1,0 +1,12 @@
+<p>childone works!</p>
+
+<p> Number of Employees {{Employees.length}} </p>
+<input #myvalue value="Enter your emplyee" >
+<button type="button" class="btn btn-primary" (click)="addemployee(myvalue.value)">Add Employees </button>
+
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let Emplyee of Employees"> {{Emplyee.name}}
+        <button class="btn btn-dark float-end" (click)="emplytransfer(Emplyee)" >view</button>
+
+    </li>
+</ul>
